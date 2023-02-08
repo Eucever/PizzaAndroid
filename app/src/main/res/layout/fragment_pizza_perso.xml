@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pizza_perso">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonValid"
+            android:layout_width="413dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#BC2F2F"
+            android:text="Valider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonMozza"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#CF8A34"
+            android:text="Mozzarella"
+            app:layout_constraintBottom_toTopOf="@+id/buttonAnch"
+            app:layout_constraintEnd_toStartOf="@+id/buttonGorg"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/buttonOliv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#CF8A34"
+            android:text="Olives"
+            app:layout_constraintBottom_toTopOf="@+id/buttonJambCru"
+            app:layout_constraintEnd_toStartOf="@+id/buttonArtich"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAnch" />
+
+        <Button
+            android:id="@+id/buttonCapr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#CF8A34"
+            android:text="Câpres"
+            app:layout_constraintBottom_toTopOf="@+id/buttonArtich"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonAnch"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGorg" />
+
+        <Button
+            android:id="@+id/buttonGorg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#CF8A34"
+            android:text="Gorgonzola"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCapr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonMozza"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <Button
+            android:id="@+id/buttonAnch"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#CF8A34"
+            android:text="Anchois"
+            app:layout_constraintBottom_toTopOf="@+id/buttonOliv"
+            app:layout_constraintEnd_toStartOf="@+id/buttonCapr"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMozza" />
+
+        <Button
+            android:id="@+id/buttonJambCru"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#CF8A34"
+            android:text="Jambon Cru"
+            app:layout_constraintBottom_toTopOf="@+id/buttonValid"
+            app:layout_constraintEnd_toStartOf="@+id/buttonJambCuit"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonOliv" />
+
+        <Button
+            android:id="@+id/buttonJambCuit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#CF8A34"
+            android:text="Jambon Cuit"
+            app:layout_constraintBottom_toTopOf="@+id/buttonValid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonJambCru"
+            app:layout_constraintTop_toBottomOf="@+id/buttonArtich" />
+
+        <Button
+            android:id="@+id/buttonArtich"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="#CF8A34"
+            android:text="Artichauts"
+            app:layout_constraintBottom_toTopOf="@+id/buttonJambCuit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonOliv"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCapr" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
